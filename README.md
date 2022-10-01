@@ -1,125 +1,70 @@
-> A batteries-included Django starter project. To learn more try the books [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
+# Getting Started with Create React App
 
-## 🚀 Features
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Django 4.1 & Python 3.10
-- Install via [Pip](https://pypi.org/project/pip/), [Pipenv](https://pypi.org/project/pipenv/), or [Docker](https://www.docker.com/)
-- User log in/out, sign up, password reset via [django-allauth](https://github.com/pennersr/django-allauth)
-- Static files configured with [Whitenoise](http://whitenoise.evans.io/en/stable/index.html)
-- Styling with [Bootstrap v5](https://getbootstrap.com/)
-- Debugging with [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)
-- DRY forms with [django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
+## Available Scripts
 
-![Homepage](homepage_41.png)
-----
+In the project directory, you can run:
 
-## Table of Contents
-* **[Installation](#installation)**
-  * [Pip](#pip)
-  * [Pipenv](#pipenv)
-  * [Docker](#docker)
-* [Next Steps](#next-steps)
-* [Contributing](#contributing)
-* [Support](#support)
-* [License](#license)
+### `npm start`
 
-----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 📖 Installation
-DjangoX can be installed via Pip, Pipenv, or Docker. To start, clone the repo to your local computer and change into the proper directory.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```
-$ git clone https://github.com/wsvincent/djangox.git
-$ cd djangox
-```
+### `npm test`
 
-### Pip
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```
-$ python -m venv .venv
+### `npm run build`
 
-# Windows
-$ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-$ .venv\Scripts\Activate.ps1
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# macOS
-$ source .venv/bin/activate
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-(.venv) $ pip install -r requirements.txt
-(.venv) $ python manage.py migrate
-(.venv) $ python manage.py createsuperuser
-(.venv) $ python manage.py runserver
-# Load the site at http://127.0.0.1:8000
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Pipenv
+### `npm run eject`
 
-```
-$ pipenv install
-$ pipenv shell
-(.venv) $ python manage.py migrate
-(.venv) $ python manage.py createsuperuser
-(.venv) $ python manage.py runserver
-# Load the site at http://127.0.0.1:8000
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Docker
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To use Docker with PostgreSQL as the database update the `DATABASES` section of `django_project/settings.py` to reflect the following:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```python
-# django_project/settings.py
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
-        "HOST": "db",  # set in docker-compose.yml
-        "PORT": 5432,  # default postgres port
-    }
-}
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-The `INTERNAL_IPS` configuration in `django_project/settings.py` must be also be updated:
+## Learn More
 
-```python
-# config/settings.py
-# django-debug-toolbar
-import socket
-hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
-INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-And then proceed to build the Docker image, run the container, and execute the standard commands within Docker.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-$ docker-compose up -d --build
-$ docker-compose exec web python manage.py migrate
-$ docker-compose exec web python manage.py createsuperuser
-# Load the site at http://127.0.0.1:8000
-```
+### Code Splitting
 
-## Next Steps
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Add environment variables. There are multiple packages but I personally prefer [environs](https://pypi.org/project/environs/).
-- Add [gunicorn](https://pypi.org/project/gunicorn/) as the production web server.
-- Update the [EMAIL_BACKEND](https://docs.djangoproject.com/en/4.0/topics/email/#module-django.core.mail) and connect with a mail provider.
-- Make the [admin more secure](https://opensource.com/article/18/1/10-tips-making-django-admin-more-secure).
-- `django-allauth` supports [social authentication](https://django-allauth.readthedocs.io/en/latest/providers.html) if you need that.
+### Analyzing the Bundle Size
 
-I cover all of these steps in my three books: [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-----
+### Making a Progressive Web App
 
-## 🤝 Contributing
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Contributions, issues and feature requests are welcome! See [CONTRIBUTING.md](https://github.com/wsvincent/djangox/blob/master/CONTRIBUTING.md).
+### Advanced Configuration
 
-## ⭐️ Support
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Give a ⭐️  if this project helped you!
+### Deployment
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-[The MIT License](LICENSE)
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
