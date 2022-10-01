@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <div id="chartContainer1" style="width: 45%; height: 300px;display: inline-block;"></div>
+    <div id="chartContainer2" style="width: 45%; height: 300px;display: inline-block;"></div><br/>
+    <script>var chart = new CanvasJS.Chart("chartContainer1",
+        {
+            animationEnabled: true,
+            title: {
+                text: "Returned bottles by grade"
+            },
+            axisX: {
+                interval: 10,
+            },
+            data: [
+            {
+                type: "column",
+                color: "rgba(255,12,32,.3)",
+                dataPoints: [
+                    { x: 10, y: 2000, label: "Freshmen"  },
+                    { x: 20, y: 700, label: "Sophomore"  },
+                    { x: 30, y: 1200, label: "Junior"  },
+                    { x: 40, y: 1000, label: "Senior"  },
+                ]
+            },
+            ]
+        });
+    chart.render();
+    var chart = new CanvasJS.Chart("chartContainer2",
+        {
+            animationEnabled: true,
+            title: {
+                text: "Pie Chart",
+            },
+            data: [
+            {
+                type: "pie",
+                showInLegend: true,
+                dataPoints: [
+                    { y: 4190, legendText: "D1", indexLabel: "Dining Hall 1" },
+                    { y: 2175, legendText: "D2", indexLabel: "Dining Hall 2" },
+                    { y: 3125, legendText: "D3", indexLabel: "Dining Hall 3" },
+                    { y: 1176, legendText: "D4", indexLabel: "Dining Hall 4" },
+                    { y: 1727, legendText: "D5", indexLabel: "Dining Hall 5" },
+                    { y: 4308, legendText: "D6", indexLabel: "Dining Hall 6" },
+                    { y: 1717, legendText: "D7", indexLabel: "Dining Hall 7" }
+                ]
+            },
+            ]
+        });
+    chart.render();
+    chart.render();</script>
+    <script>
+    var mysql = require('mysql');
+    var con = mysql.createConnection({
+    host: "localhost",
+    user: "rts49.mysql.database.azure.com",
+    password: "KFi70EOCQvW8RKzyXets!"
+    });
+    con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    });
+    </script>
+</body>
+</html>
+white_check_mark
+eyes
+raised_hands
+
+
+
+
+
+
+
+
+
+
+
+
+
+
