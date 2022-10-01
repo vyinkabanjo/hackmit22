@@ -1,7 +1,11 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
-/* background-color: #3C5A14;  */
+background: linear-gradient(217deg, rgba(89, 139, 44, 1), rgba(0,255,0,0) 70.71%),
+            linear-gradient(127deg, rgba(89, 139, 44, 1), rgba(0,0,255,0) 70.71%),
+            linear-gradient(336deg, rgba(17, 39, 11, 1), rgba(0,0,255,0) 70.71%);
+background-attachment: fixed;
 }
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
 width: 18%;
@@ -14,13 +18,13 @@ box-sizing: border-box;
       
 /* Set a style for all buttons */
 button {
-background-color: #04AA6D;
+background-color: #598B2C;
 color: white;
 padding: 14px 20px;
 margin: 8px 0;
 border: none;
 cursor: pointer;
-width: 100%;
+width: 50%;
 }
 
 button:hover {
@@ -29,9 +33,9 @@ opacity: 0.8;
     
       /* Extra styles for the cancel button */
 .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
 }
       
       /* Center the image and position the close button */
@@ -48,6 +52,8 @@ img.avatar {
     
 .container {
       padding: 16px;
+      background-color: #203e16;
+      
 }
       ​
 span.psw {
@@ -58,21 +64,29 @@ span.psw {
     
 /* The Modal (background) */
 .modal {
-position: fixed; /* Stay in place */
+justify-content:center;
+align-items: center;
 z-index: 1; /* Sit on top */
 left: 0;
 top: 0;
 width: 100%; /* Full width */
 height: 100%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* background-color: rgb(0,0,0); Fallback color */
+/* background-color: rgba(0,0,0,0.4); Black w/ opacity */
 padding-top: 60px;
+color:#ffffff;
+height: 800px;
+width: 100%;
 }
-      ​
-      /* Modal Content/Box */
 
-      .modal-content {
+      
+/* Modal Content/Box */
+.modal-content {
+background-color: #203e16;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
 background-color: #fefefe;
 margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
 border: 1px solid #888;
