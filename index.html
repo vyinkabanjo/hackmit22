@@ -8,26 +8,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+   <!-- background="images/globe.jpeg" -->
+
 <h1> Welcome to the Green Go Initiative </h1>
+
 <div id="id01" class="modal">
    <form class="modal-content animate" action="/action_page.php" method="post">
 ​
       <div class="container">
-         <label for="uname"><b>Username</b></label>
-         <input type="text" placeholder="Enter Username" name="uname" required>
-      ​
-         <label for="psw"><b>Password</b></label>
-         <input type="password" placeholder="Enter Password" name="psw" required>
+         <div class="login_details">
+            <h1> Green Go! </h1>
+            <div class= "field">
+               <label for="uname"><b>Username</b></label>
+            </div>
+            <div>
+               <input type="text" placeholder="Username" name="uname" required>
+            </div>
+         ​   <div class= "field">
+               <label for="psw"><b>Password</b></label>
+            </div>
+            <div>
+               <input type="password" placeholder="Password" name="psw" required>
+            </div>
+            <div>
+               <button type="submit">Login</button>
+            </div>
+            <label>
+               <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+         </div>
          
-         <button type="submit">Login</button>
-         <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-         </label>
       </div>
-​
-      <div class="container" >
+
+      <div class="cancel">
          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-         <span class="psw">Forgot <a href="#">password?</a></span>
+         <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
       </div>
    </form>
 </div>
