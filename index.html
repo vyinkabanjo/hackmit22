@@ -13,7 +13,7 @@
    <form class="modal-content animate" action="/action_page.php" method="post">
 ​
       <div class="container">
-         <div class="log-in details">
+         <div class="login_details">
             <h1> Green Go! </h1>
             <div class= "field">
                <label for="uname"><b>Username</b></label>
@@ -23,16 +23,19 @@
                <label for="psw"><b>Password</b></label>
                <input type="password" placeholder="Enter Password" name="psw" required>
             </div>
-            <button type="submit">Login</button>
+            <div>
+               <button type="submit">Login</button>
+            </div>
             <label>
                <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
          </div>
+         
       </div>
-​
-      <div class="container" >
+
+      <div class="cancel">
          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-         <span class="psw">Forgot <a href="#">password?</a></span>
+         <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
       </div>
    </form>
 </div>

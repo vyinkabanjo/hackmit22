@@ -24,11 +24,26 @@ padding: 14px 20px;
 margin: 8px 0;
 border: none;
 cursor: pointer;
-width: 50%;
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
 }
 
 button:hover {
 opacity: 0.8;
+}
+
+.field {
+width: 100%
+}
+
+.login_details{
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+
 }
     
       /* Extra styles for the cancel button */
@@ -52,10 +67,15 @@ img.avatar {
     
 .container {
       padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: #203e16;
+      border-radius: 10px;
       
 }
-      ​
+
+
 span.psw {
       float: right;
       padding-top: 16px;
@@ -78,12 +98,16 @@ padding-top: 60px;
 color:#ffffff;
 height: 800px;
 width: 100%;
+display: flex;
+border-radius: 10px;
 }
+
 
       
 /* Modal Content/Box */
 .modal-content {
 background-color: #203e16;
+display: flex
 justify-content: center;
 align-items: center;
 border-radius: 10px;
