@@ -1,10 +1,20 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
-background: linear-gradient(217deg, rgba(89, 139, 44, 1), rgba(0,255,0,0) 70.71%),
+/* background-image: url('green_environment.jpeg') */
+/* background: linear-gradient(217deg, rgba(89, 139, 44, 1), rgba(0,255,0,0) 70.71%),
             linear-gradient(127deg, rgba(89, 139, 44, 1), rgba(0,0,255,0) 70.71%),
-            linear-gradient(336deg, rgba(17, 39, 11, 1), rgba(0,0,255,0) 70.71%);
-background-attachment: fixed;
+            linear-gradient(336deg, rgba(17, 39, 11, 1), rgba(0,0,255,0) 70.71%);*/
+/* background-attachment: fixed; */
+background-image: url("images/globe.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+padding-top: 100px;
+
 }
+
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -35,8 +45,17 @@ button:hover {
 opacity: 0.8;
 }
 
-.field {
-width: 100%
+.bg {
+    /* The image used */
+    background-image: url("images/globe.jpeg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login_details{
@@ -67,11 +86,11 @@ img.avatar {
     
 .container {
       padding: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      /* justify-content: center;
+      align-items: center; */
       background-color: #203e16;
       border-radius: 10px;
+      /* width: 60%; */
       
 }
 
@@ -83,22 +102,21 @@ span.psw {
 
     
 /* The Modal (background) */
-.modal {
-justify-content:center;
-align-items: center;
+.modal { 
+/* justify-content:center;
+align-items: center; */
 z-index: 1; /* Sit on top */
 left: 0;
 top: 0;
-width: 100%; /* Full width */
+width: 40%; /* Full width */
 height: 100%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
 /* background-color: rgb(0,0,0); Fallback color */
 /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
-padding-top: 60px;
+padding: 10px;
+/* margin: auto; */
 color:#ffffff;
-height: 800px;
-width: 100%;
-display: flex;
+/* display: flex; */
 border-radius: 10px;
 }
 
@@ -114,8 +132,7 @@ border-radius: 10px;
 background-color: #fefefe;
 margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
 border: 1px solid #888;
-width: 80%; /* Could be more or less, depending on screen size */
-}
+width: 80%}
       
 /* The Close Button (x) */
 .close {
