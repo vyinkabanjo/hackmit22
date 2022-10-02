@@ -1,20 +1,56 @@
-
 body {
-      font-family: Arial, Helvetica, sans-serif;
-      /* background-image: url('green_environment.jpeg') */
-      /* background: linear-gradient(217deg, rgba(89, 139, 44, 1), rgba(0,255,0,0) 70.71%),
-                  linear-gradient(127deg, rgba(89, 139, 44, 1), rgba(0,0,255,0) 70.71%),
-                  linear-gradient(336deg, rgba(17, 39, 11, 1), rgba(0,0,255,0) 70.71%);*/
-      /* background-attachment: fixed; */
-      background-image: url("images/globe.jpeg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-      padding-top: 100px;
+font-family: Arial, Helvetica, sans-serif;
+background-image: url("images/globe.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+padding-top: 100px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 18%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
       
-      }
+/* Set a style for all buttons */
+button {
+background-color: #598B2C;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("images/globe.jpeg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
       
       
