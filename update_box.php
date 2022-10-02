@@ -1,3 +1,4 @@
+<meta http-equiv="Refresh" content="5; url='statspage.html'" />
 <?php
 
 function debug_to_console($data) {
