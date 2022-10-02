@@ -27,6 +27,8 @@ Scan Out or In a box:
                 lastResult = decodedText;
                 // Handle on success condition with the decoded message.
                 console.log(`Scan result ${decodedText}`, decodedResult);
+                resultContainer.innerHTML += `<div>[${countResults}] - ${decodedText}</div>`;
+            
             }
         }
 
