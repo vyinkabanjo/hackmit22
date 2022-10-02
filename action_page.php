@@ -1,12 +1,20 @@
 <html>
 <head>
+    <title>QR Scan</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="users.css" />
 <body>
 
 Welcome <?php echo $_POST["uname"]; ?><br>
 Scan Out or In a box:
-    <div id="qr-reader" style="width:500px"></div>
-    <div id="qr-reader-results"></div>
+<body>
+    <div class="wrapper">
+        <div class="profile-card">
+            <div id="qr-reader" style="width:500px"></div>
+            <div id="qr-reader-results"></div>
+        </div>
+    </div>
+</body>
 <script src="https://unpkg.com/html5-qrcode@2.2.1/html5-qrcode.min.js"></script>
 <script>
     function docReady(fn) {
