@@ -39,6 +39,9 @@ fputcsv( $output, $data);
 fclose( $input );
 fclose( $output );
 
+
+//TODO at this point we should also generate the stats file for the chart page - shoud be "freshman""sophomore"jr""sr""d1""d2"..."d7" with a value under for each
+
 //clean up
 unlink('box_status.csv');// Delete obsolete BD
 debug_to_console("Deleted old file");
